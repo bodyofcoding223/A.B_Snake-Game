@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="landingPage">
+        <div id="gameLogo">🪱</div>
+        <div id="menu">
+            <button id="startButton">Start</button>
+            <button id="settingsButton">Settings</button>
+        </div>
+    </div>
+
+    <div id="gameHeader" style="display:none;">
+        <div id="scoreDisplay">Score: 0</div>
+        <button id="pauseButton">Pause</button>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="controls" style="display:none;">
+        <div>
+            <button id="upButton">↑</button>
+            <button id="leftButton">←</button>
+            <button id="downButton">↓</button>
+            <button id="rightButton">→</button>
+        </div>
+    </div>
+
+    <div id="settingsModal" style="display:none;">
+        <div id="settingsContent">
+            <label for="speedControl">Speed:</label>
+            <select id="speedControl">
+                <option value="1.0.">1.0</option>
+                <option value="2.0">2.0</option>
+                <option value="5.0">5.0</option>
+                <option value="8.0">8.0</option>
+                <option value="10.0">10.0</option>
+            </select>
+            <div>
+                <label for="soundToggle">Sound:</label>
+                <input type="checkbox" id="soundToggle" checked>
+            </div>
+
+            <button id="closeSettings">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
